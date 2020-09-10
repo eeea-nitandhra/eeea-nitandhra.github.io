@@ -1,0 +1,83 @@
+* {
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+	border-bottom: 3px white solid;
+	margin:20px;
+	padding:10px;
+	font-size: 3rem;
+	color: #fff;	
+}
+body{
+    /*width: 100%;
+    display: flex;*/
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Images/pexels-wolfgang-2747449.jpg);
+    background-size: cover;
+    padding: 0 1.5rem;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 310px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  height: auto;
+  max-width: 100%;
+  border-radius: 6px;
+  padding: 2rem;
+  height: 600px;
+  background:rgba(255,255,255);
+  box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),
+    0 0 1rem rgba(0,0,0,0.2);
+  }
+  .card__image-container {
+    margin: -2rem -2rem 1rem -2rem;
+  }
+  .card__line {
+  opacity: 0;
+  animation: LineFadeIn .8s .8s forwards ease-in;
+  }
+
+  .card__image {
+    opacity: 0;
+    animation: ImageFadeIn .8s 1.4s forwards;
+  }
+
+  .card__title {
+    color:#433;
+    margin-top: 0;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    background:rgba(255,255,255);
+  }
+  
+  .card__content {
+    margin-top: -1rem;
+    opacity: 0;
+    animation: ContentFadeIn .8s 1.6s forwards;
+  }
+  
+  .card__svg {
+    position: absolute;
+    left: 0;
+    top: 115px;
+  }
+  .col-lg-4{
+    margin: 20px auto;
+  }
+  h1,h3{
+    line-height: 1.6;
+  }
+

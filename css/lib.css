@@ -1,0 +1,116 @@
+body{
+	background-image: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+	background-repeat:cover no-repeat;
+	background-size: cover;
+	font-family: Noto Serif;
+	margin: auto;
+}
+
+.heading{
+	padding-top:5%;
+}
+.row{
+margin: auto;
+
+}
+h1,h4{
+	color:white;
+	text-align: center;
+}
+.col-lg-3{
+	margin-left:7%;
+	margin-top: 10%;
+}
+.card{
+	
+	width:18rem;
+	height:300px;
+	border:none;
+}
+.card-header{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 800;
+
+	
+}
+.card-body{
+	text-align: center;
+}
+.card .btn{
+	margin:20px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  33% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.button_h {
+  margin-top: 20px;
+  margin-left: 15px;
+  display: inline-flex;
+  align-items: center;
+  background: rgba(17,119,118);
+  color: #eee;
+  box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
+  border-radius: 5px;
+  height: 45px;
+  padding: 0 30px;
+  color: white;
+  font-family: Lato, Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .3s, transform .3s, box-shadow .3s;
+  will-change: transform;
+}
+.button_h:hover {
+background: darken(#fff,100%);
+box-shadow: 0 4px 17px rgba(0,0,0,0.2);
+transform: translate3d(0, -2px, 0);
+text-decoration: none;
+color: white;
+}
+.button_h:active {
+box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+transform: translate3d(0, 1px, 0);
+}
+.pulse {
+  position: relative;
+}
+.pulse:before, .pulse:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,.4);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    margin: auto;
+  }
+  .pulse:before {
+    animation: pulse 1.5s infinite linear;
+  }
+  .pulse:after {
+    animation: pulse 2s .4s infinite linear;
+  }
+  .pulse:hover:before, .pulse:hover:after {
+    display: none;
+  }
+  .btn{
+  	background: rgba(17,119,118);
+  }
